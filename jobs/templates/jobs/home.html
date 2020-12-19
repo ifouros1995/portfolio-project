@@ -1,6 +1,8 @@
 
 <!doctype html>
 <html lang="en">
+{% load static %}
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +16,7 @@
     
 
     <!-- Bootstrap core CSS -->
+}
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
@@ -57,7 +60,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto">
         <a class="nav-link" href="#">Twitter</a>
-        <a class="nav-link" href="#">Resume</a>
+        <a class="nav-link" href="{% static 'Dimitrios Adamis CV.pdf' %}">Resume</a>
         <a class="nav-link" href="#">Blog</a>
       </div>
     </div>
@@ -75,6 +78,7 @@
         <p>
           <a href="mailto:jimadamis95@yahoo.com" class="btn btn-primary my-2">Email Me</a>
         </p>
+        <img src = " { % static 'myphoto.jpg' %}"/>
       </div>
     </div>
   </section>
