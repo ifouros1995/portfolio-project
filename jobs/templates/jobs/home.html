@@ -9,14 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.79.0">
-    <title>Album example · Bootstrap v5.0</title>
+    <title>Dimitris Adamis</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
 
     
 
     <!-- Bootstrap core CSS -->
-}
+
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
@@ -53,15 +53,15 @@
 <header>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Dimitrios Adamis</a>
+    <a class="navbar-brand" href="{% url 'home' %}">Dimitrios Adamis</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto">
-        <a class="nav-link" href="#">Twitter</a>
-        <a class="nav-link" href="{% static 'Dimitrios Adamis CV.pdf' %}">Resume</a>
-        <a class="nav-link" href="#">Blog</a>
+        <a class="nav-link" target="_blank" href="https://www.facebook.com/jimakos.bazelakos/">Facebook</a>
+        <a class="nav-link" target="_blank" href="{% static 'Dimitrios Adamis CV.pdf' %}">Resume</a>
+        <a class="nav-link" href="{% url 'allblogs' %}">Blog</a>
       </div>
     </div>
   </div>
@@ -78,7 +78,7 @@
         <p>
           <a href="mailto:jimadamis95@yahoo.com" class="btn btn-primary my-2">Email Me</a>
         </p>
-        <img src = " { % static 'myphoto.jpg' %}"/>
+        <img width="50%" height="270" src = " {% static 'myphoto.jpg' %}" />
       </div>
     </div>
   </section>
